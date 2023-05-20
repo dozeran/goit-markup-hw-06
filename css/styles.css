@@ -693,17 +693,19 @@ img {
 
 .form-input {
   width: 100%;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.2);
+  background-color: transparent;
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
   padding: 12px 38px;
   font-size: 12px;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
-  border: 1px solid var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .form-input:focus + .input-ico {
@@ -713,6 +715,8 @@ img {
 .input-label {
   display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 
 .textarea {
