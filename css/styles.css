@@ -789,7 +789,8 @@ img {
 }
 
 .visually-hidden:checked ~ .new-checkbox {
-  border: 1px solid var(--hover-color);
+  border: none;
+  border-color: var(--hover-color);
   background-color: var(--hover-color);
   fill: var(--main-white-color);
 }
