@@ -749,9 +749,7 @@ img {
 }
 
 .privacy {
-  position: relative;
   margin-bottom: 24px;
-  padding-left: 24px;
 }
 
 .input-ico {
@@ -768,19 +766,15 @@ img {
 }
 
 .new-checkbox {
-  display: inline-block;
   width: 16px;
   height: 16px;
   border: 1px solid var(--title-text-color);
   border-radius: 2px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .visually-hidden {
@@ -794,9 +788,10 @@ img {
   overflow: hidden;
 }
 
-.checkbox:checked + .new-checkbox {
+.visually-hidden:checked ~ .new-checkbox {
   border: 1px solid var(--hover-color);
-  fill: var(--accent-color);
+  background-color: var(--hover-color);
+  fill: var(--main-white-color);
 }
 
 .privacy-label {
